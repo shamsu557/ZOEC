@@ -1,0 +1,163 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #212529;
+}
+
+.navbar-brand {
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #ffc107;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.hero-section {
+    background-image: url('hero.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 25px;
+}
+
+.cta-btn:hover {
+    background-color: #e0a800;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: rgb(115, 115, 155);
+}
+
+.footer a:hover {
+    color: #e0a800;
+}
+
+.stat-count {
+    font-size: 50px;
+    font-weight: bold;
+    color: black; /* Yellow color */
+}
+
+.cta-btn {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #745b12;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #212529;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: #f8f9fa !important; /* Keeping navbar text white */
+    }
+
+    /* White background for the hamburger icon */
+    .navbar-toggler {
+        background-color: white !important;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white !important;
+    }
+
+    .hero-section {
+        height: 60vh; /* Adjust hero section height for mobile */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem; /* Reduce font size for mobile */
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller section title for mobile */
+    }
+
+    .stat-count {
+        font-size: 35px; /* Smaller numbers for mobile view */
+    }
+
+    .footer {
+        padding: 15px 0; /* Adjust footer padding for mobile */
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+}
