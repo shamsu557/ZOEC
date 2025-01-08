@@ -5,6 +5,8 @@ body {
 
 .navbar {
     background-color: #212529;
+    position: fixed;
+    width:100%;
 }
 
 .navbar-brand {
@@ -181,6 +183,20 @@ body {
         display: none;
     }
 }
+.logo {
+    position: absolute; /* Position it absolutely at the top-left */
+    left: 0; /* Align the logo to the left */
+    top: 0;  /* Adjust distance from the top */
+    margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+/* Make the logo slightly bigger on mobile and ensure it's circular */
+.logo-img {
+    width: 60px;  /* Adjust the width of the logo */
+    height: 40px;  /* Adjust the height to make it rectangular */
+    border-radius: 0; /* Remove the circular border-radius for a rectangular shape */
+    padding-left: 0; /* Remove padding */
+}
 #myBtn {
     display: none;
     position: fixed;
@@ -220,6 +236,34 @@ body {
         background-color: white !important;
     }
 
+ /* Fix the Company Logo at the very start on Mobile */
+ .logo {
+    position: absolute; /* Position it absolutely at the top-left */
+    left: 0; /* Align the logo to the left */
+    top: 2px;  /* Adjust distance from the top */
+    margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+/* Make the logo slightly bigger on mobile and ensure it's rectangular */
+.logo-img {
+    width: 60px;  /* Adjust the width of the logo */
+    height: 40px;  /* Adjust the height to make it rectangular */
+    border-radius: 0; /* Remove the circular border-radius for a rectangular shape */
+    padding-left: 0; /* Remove padding */
+}
+
+
+    /* Adjust the navbar text spacing on mobile */
+    .navbar-brand.ml-5 {
+        margin-left: 28%;  /* Reduce the left margin to make space for the logo */
+        font-size: 1rem; /* Make font size smaller for mobile view */
+    }
+    .navbar-brand {
+        margin-left: 1px;  /* Reduce the left margin to make space for the logo */
+        font-size: 1rem; /* Make font size smaller for mobile view */
+        padding:0%;
+    }
+
     .hero-section {
         height: 60vh; /* Adjust hero section height for mobile */
     }
@@ -253,6 +297,7 @@ body {
         font-size: 14px;
     }
 }
+
 .transparent-bg {
     background-color: rgba(82, 75, 75, 0.5); /* Black with 50% opacity */
     color: white; /* Ensures text remains readable */
