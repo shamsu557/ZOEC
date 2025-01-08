@@ -207,7 +207,7 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(210, 210, 233);
+    background-color: rgb(47, 47, 50);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -215,7 +215,7 @@ body {
     }
     
     #myBtn:hover {
-    background-color: #555;
+    background-color: #090909;
     }
     
 /* Mobile View */
