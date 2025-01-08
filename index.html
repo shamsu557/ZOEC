@@ -126,97 +126,135 @@
         </div>
     </section>
     
-
-    <!-- Stats Section -->
-    <section class="transparent-bg">
-        <div class="container text-center">
-            <h2 class="section-title">Our Achievements</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4>Employed Staff</h4>
-                    <p class="stat-count" data-count="120">0</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Completed Projects</h4>
-                    <p class="stat-count" data-count="350">0</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>Countries Domiciled</h4>
-                    <p class="stat-count" data-count="12">0</p>
-                </div>
+<!-- Stats Section -->
+<section class="stats-section py-5">
+    <div class="transparent container text-center rounded shadow-effect p-4">
+        <h2 class="section-title mb-4">Our Achievements</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <h4>Employed Staff</h4>
+                <p class="stat-count display-4" data-count="120">0</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Completed Projects</h4>
+                <p class="stat-count display-4" data-count="350">0</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Countries Domiciled</h4>
+                <p class="stat-count display-4" data-count="12">0</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects In Process Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Projects In Process</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="project1.jpg" class="img-fluid" alt="Project 1">
-                    <p>Project Name 1</p>
+   <!-- Projects In Process Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Active Construction Site</h2>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="road.jpg" class="d-block w-100 img-fluid rounded" alt="Project 1">
+                    <div class="carousel-caption d-md-block">
+                        <p>Road Construction</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="project2.jpg" class="img-fluid" alt="Project 2">
-                    <p>Project Name 2</p>
+                <div class="carousel-item">
+                    <img src="school.jfif" class="d-block w-100 img-fluid rounded" alt="Project 2">
+                    <div class="carousel-caption d-md-block">
+                        <p>School Construction</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="project3.jpg" class="img-fluid" alt="Project 3">
-                    <p>Project Name 3</p>
+                <div class="carousel-item">
+                    <img src="bridge.jfif" class="d-block w-100 img-fluid rounded" alt="Project 3">
+                    <div class="carousel-caption d-md-block">
+                        <p>Bridge Construction</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Partners Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Partners</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="partner1.jpg" class="img-fluid" alt="Partner 1">
-                </div>
-                <div class="col-md-3">
-                    <img src="partner2.jpg" class="img-fluid" alt="Partner 2">
-                </div>
-                <div class="col-md-3">
-                    <img src="partner3.jpg" class="img-fluid" alt="Partner 3">
-                </div>
-                <div class="col-md-3">
-                    <img src="partner4.jpg" class="img-fluid" alt="Partner 4">
-                </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+    
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-3">
+    <div class="container">
+        <!-- Contact Section -->
+        <div class="text-center mb-2">
+            <h6 class="mb-1">Ready to Bring Your Project to Life</h6>
+            <p class="small mb-2">Let’s make your vision a reality. Get in touch with us today!</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-6">
+                <h6 class="mb-1">Call Us</h6>
+                <p class="small mb-0">08039766326</p>
+                <p class="small mb-0">08065571285</p>
+                <p class="small mb-0">08135768245</p>
+            </div>
+            <div class="col-6">
+                <h6 class="mb-1">Email Us</h6>
+                <p class="small mb-0">info@zoecconstruction.com</p>
             </div>
         </div>
-    </section>
 
-    <!-- Ready to Build Your Project Section -->
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
-            <h2 class="section-title">Ready to Bring  Your Project to life </h2>
-            <p>Let’s make your vision a reality. Get in touch with us today!</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Call Us</h4>
-                    <p>+1 234 567 890</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Email Us</h4>
-                    <p>info@zoecconstruction.com</p>
-                </div>
-            </div>
+        <!-- Address Section -->
+        <div class="text-center mb-2">
+            <h6 class="mb-1">Visit Us</h6>
+            <p class="small mb-0">Zoec Construction Nigeria Limited</p>
+            <p class="small mb-0">17 Ahmadu Bello, Nasarawa, Kano, Kano State, Nigeria</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 ZOEC. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <!-- Social Media Icons -->
+        <div class="social-icons text-center mt-2">
+            <a href="https://www.facebook.com" target="_blank" class="text-white me-2" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-white me-2" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white me-2" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="text-white" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Footer Links -->
+        <div class="text-center mt-2">
+            <p class="small mb-0">&copy; 2025 ZOEC. All rights reserved.</p>
+            <p class="small mb-0">
+                <a href="#" class="text-white text-decoration-none">Privacy Policy</a> | 
+                <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         // Animate the stats count
         document.querySelectorAll('.stat-count').forEach(function(stat) {
