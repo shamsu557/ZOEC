@@ -152,16 +152,17 @@
       </div>
     </div>
 
-    <!-- Company Profile -->
-    <div class="row mb-4">
-      <div class="col-12 d-flex align-items-start">
-        <i class="fas fa-file-pdf mr-3"></i>
-        <div>
-          <p class="mb-0"><strong>Company Profile</strong></p>
-          <a href="ZOEC CONSTRUCTION NIG LTD..pdf" target="_blank" class="text-primary">View Profile</a>
-        </div>
-      </div>
+   <!-- Company Profile -->
+<!-- Company Profile -->
+<div class="row mb-4">
+  <div class="col-12 d-flex align-items-start">
+    <i class="fas fa-file-pdf mr-3"></i>
+    <div>
+      <p class="mb-0"><strong>Company Profile</strong></p>
+      <a href="ZOEC CONSTRUCTION NIG LTD..pdf" id="viewProfileLink" class="text-primary">View Profile</a>
     </div>
+  </div>
+</div>
 
   </div>
 
@@ -171,3 +172,26 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<script>
+  // Automatically download and open the file
+  document.getElementById('viewProfileLink').addEventListener('click', function(event) {
+    // Prevent the default behavior of the link (to open the file in a new tab)
+    event.preventDefault();
+
+    const fileUrl = this.href; // Get the file URL
+
+    // Create a link element to trigger the download
+    const downloadLink = document.createElement('a');
+    downloadLink.href = fileUrl;
+    downloadLink.download = 'Company_Profile.pdf'; // You can specify a name for the downloaded file
+    document.body.appendChild(downloadLink);
+
+    // Trigger the download
+    downloadLink.click();
+
+    // Open the document in a new tab/window after a short delay
+    setTimeout(function() {
+      window.open(fileUrl, '_blank'); // Open the document in a new tab or window
+    }, 1000); // 1 second delay to allow the download to initiate first
+  });
+</script>
