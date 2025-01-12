@@ -4,9 +4,9 @@ body {
 }
 
 .navbar {
-    background-color: #212529;
+    background: linear-gradient(45deg, #1c1b1b, #041b2a); /* Sky blue gradient */
     position: fixed;
-    width:100%;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #ffc107;
+    color: #ffffff; /* Keep white on hover */
 }
 
 .nav-link {
@@ -24,11 +24,12 @@ body {
 }
 
 .nav-link:hover {
-    color: #ffc107 !important;
+    color: #ffffff !important; /* Match white on hover for consistency */
+    background-color: #4682B4; /* Darker sky blue on hover */
 }
-
+/* Custom Styles */
 .hero-section {
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,30 +38,56 @@ body {
     background-size: cover;
     background-position: center;
     animation: backgroundZoom 10s infinite, backgroundSlide 30s infinite;
-    background-image: url('hero3.jpg'); /* Default image */
+    background-image: linear-gradient(to right, #00bcd4, #81d4fa), url('inconstruction1.jfif'); /* Sky blue gradient and image */
     transition: background-image 1s ease-in-out;
 }
-.stats-section {
-    background-color: #f8f9fa; /* Light grey background for contrast */
+.heroA{
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(129, 212, 250, 0.3)), url('renovation.jfif'); /* Sky blue gradient and image */
 }
-.transparent{
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    box-shadow: 0 10px 20px rgba(245, 245, 245, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15); /* Shadow for entire section */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.heroB{
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(129, 212, 250, 0.3)), url('constrtn.jfif'); /* Sky blue gradient and image */
 }
-.transparent:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.heroC{
+    height: 68vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(129, 212, 250, 0.3)), url('nursemdb.jfif'); /* Sky blue gradient and image */
 }
 .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333333;
+    background: linear-gradient(45deg, #87CEEB, #4682B4);
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
-.stat-count {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1f1f20;
+.project-item {
+    margin-bottom: 30px;
+}
+.project-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 @keyframes backgroundZoom {
     0% {
@@ -74,12 +101,32 @@ body {
     }
 }
 
-/* Optional: Add a subtle fade to the images */
+/* Add subtle fade and continuous background image sliding with more transparent gradients */
 @keyframes backgroundSlide {
-    0%, 20% { background-image: url('heroro.jpg'); }
-    40%, 60% { background-image: url('hero2.jpg'); }
-    80%, 100% { background-image: url('hero3.jpg'); }
-    80%, 100% { background-image: url('hero4.jpg'); }
+    0%, 10% { 
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(129, 212, 250, 0.3)), url('inconstruction3.jfif'); /* More transparent sky blue gradient + first image */
+    }
+    10%, 20% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(3, 155, 229, 0.3)), url('nursemdb1.jfif'); /* More transparent more intense blue gradient + second image */
+    }
+    20%, 30% {
+        background-image: linear-gradient(to right, rgba(230, 238, 239, 0.3), rgba(2, 136, 209, 0.3)), url('vivala1.jpeg'); /* More transparent lighter gradient + third image */
+    }
+    30%, 40% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(2, 136, 209, 0.3)), url('agric.jfif'); /* More transparent fourth image with gradient */
+    }
+      40%, 55% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(2, 136, 209, 0.3)), url('nursemdb.jfif'); /* More transparent fourth image with gradient */
+    }
+    55%, 70% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(2, 136, 209, 0.3)), url('roadcon.jfif'); /* More transparent fourth image with gradient */
+    }
+    70%, 80% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(2, 136, 209, 0.3)), url('agric.jfif'); /* More transparent fourth image with gradient */
+    }
+    75%, 100% {
+        background-image: linear-gradient(to right, rgba(0, 188, 212, 0.3), rgba(2, 136, 209, 0.3)), url('bagauda.jfif'); /* More transparent fourth image with gradient */
+    }
 }
 
 
@@ -93,21 +140,37 @@ body {
     font-size: 1.25rem;
     margin-top: 20px;
 }
-
-.cta-btn {
-    margin-top: 30px;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: #ffc107;
-    border: none;
-    border-radius: 25px;
+.heroA h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.cta-btn:hover {
-    background-color: #e0a800;
+.heroA p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+.heroB h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.heroB p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+.heroC h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.heroC p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+/* Other styles */
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -120,7 +183,7 @@ body {
 }
 
 .footer {
-    background-color: #212529;
+    background: linear-gradient(45deg, #1c1b1b, #041b2a); /* Sky blue gradient */
     color: #f8f9fa;
     padding: 20px 0;
     text-align: center;
@@ -135,7 +198,7 @@ body {
 }
 
 .cta-btn {
-    background-color: rgb(88, 85, 85);
+    background-color: rgb(25, 172, 240);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -145,15 +208,20 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #745b12;
+    background-color: #7ff0d6c4;
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    top: 50%;                   /* Center the caption vertically */
+    left: 50%;                  /* Center the caption horizontally */
+    transform: translate(-50%, -50%);  /* Adjust the positioning to truly center the text */
+    background-color: rgba(135, 206, 235, 0.5); /* Sky blue with 50% opacity */
     color: white;
     padding: 15px;
     border-radius: 5px;
     font-size: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .carousel-item img {
@@ -172,8 +240,9 @@ body {
 
 .navbar-toggler {
     display: block;
-    right:0;
+    right: 0;
 }
+
 
 @media (max-width: 991px) {
     .navbar-toggler {
@@ -207,7 +276,7 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(47, 47, 50);
+    background: linear-gradient(45deg, #1b2a3b, #3c4a70); /* Sky blue gradient */
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -215,9 +284,12 @@ body {
     }
     
     #myBtn:hover {
-    background-color: #090909;
+    background-color: #1c6474;
     }
-    
+    .stats-section{
+        background-color: rgb(154, 210, 236);
+        color:white;
+    }
 /* Mobile View */
 @media (max-width: 768px) {
     .navbar {
@@ -278,6 +350,39 @@ body {
     .hero-section p {
         font-size: 1rem;
     }
+    .heroA {
+        height: 60vh; /* Adjust hero section height for mobile */
+    }
+
+    .heroA h1 {
+        font-size: 2.5rem; /* Reduce font size for mobile */
+    }
+
+    .heroA p {
+        font-size: 1rem;
+    }
+    .heroB {
+        height: 60vh; /* Adjust hero section height for mobile */
+    }
+
+    .heroB h1 {
+        font-size: 2.5rem; /* Reduce font size for mobile */
+    }
+
+    .heroB p {
+        font-size: 1rem;
+    }
+    .heroC {
+        height: 60vh; /* Adjust hero section height for mobile */
+    }
+
+    .heroC h1 {
+        font-size: 2.5rem; /* Reduce font size for mobile */
+    }
+
+    .heroC p {
+        font-size: 1rem;
+    }
 
     .cta-btn {
         font-size: 16px;
@@ -285,7 +390,7 @@ body {
     }
 
     .section-title {
-        font-size: 2rem; /* Smaller section title for mobile */
+        font-size: 1rem; /* Smaller section title for mobile */
     }
 
     .stat-count {
@@ -300,10 +405,72 @@ body {
         font-size: 14px;
     }
 }
+        .section-title {
+            background: linear-gradient(45deg, #87CEEB, #4682B4);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 2rem; 
+        }
+        .sub-services {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .sub-services .service-item {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+        }
 
 .transparent-bg {
-    background-color: rgba(82, 75, 75, 0.5); /* Black with 50% opacity */
+    background-color: rgba(135, 206, 235, 0.5); /* Sky blue with 50% opacity */
     color: white; /* Ensures text remains readable */
     padding: 10px; /* Adds some padding for a better look */
     border-radius: 5px; /* Optional: Rounds the corners */
+}
+.mission-vision p {
+    text-align: justify;
+}
+
+.services-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-card:hover {
+    transform: scale(1.05);
+}
+
+/* Default styling for large screens */
+.countries-served-section img {
+    width: 100px; /* Make flags smaller on mobile */
+        height: 100px; /* Ensure flags remain square */
+        border-radius: 50%; /* Make flags circular */
+}
+
+/* Styling for mobile screens */
+@media (max-width: 768px) {
+    .countries-served-section img {
+        width: 100px; /* Make flags smaller on mobile */
+        height: 100px; /* Ensure flags remain square */
+        border-radius: 50%; /* Make flags circular */
+    }
+}
+a {
+    text-decoration: none; /* Remove underline by default */
+    color: inherit; /* Optional: Inherit color from the parent element */
+}
+ 
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none; /* Ensure no underline appears on hover, focus, or click */
 }
